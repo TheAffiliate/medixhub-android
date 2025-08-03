@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "io.appwrite.starterkit"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 21
@@ -61,8 +61,16 @@ dependencies {
 
     // compose platform
     implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
 
     // debug libraries
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //More dependencies
+    implementation("io.appwrite:sdk-for-android:8.2.1")
+
 }

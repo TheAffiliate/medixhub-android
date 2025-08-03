@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:id="@+id/landing_page"
+    tools:context="io.appwrite.starterkit.landing_page">
+
+    <!-- Health Icon (White) -->
+    <ImageView
+        android:id="@+id/healthImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/img"
+        />
+
+    <!-- Header Text (White) -->
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your health,"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Subheader Text (White) -->
+    <TextView
+        android:id="@+id/subheaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="one tap away"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Description Text (Grey) -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="Book appointments with top\n doctors in seconds."
+        android:textColor="#AAAAAA"
+        android:textSize="18sp" />
+
+    <!-- Lime Green Button -->
+    <!-- Robot Green Button -->
+    <Button
+        android:id="@+id/getStartedButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#00CC00"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:stateListAnimator="@null" />
+
+    <!-- Skip Button (Grey) -->
+    <Button
+        android:id="@+id/skipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="#AAAAAA"
+        android:textSize="16sp" />
+
+</LinearLayout>
