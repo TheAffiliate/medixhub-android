@@ -1,15 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.AppwriteStarterKit" parent="android:Theme.Material.Light.NoActionBar">
+    <!-- ✅ AppCompat-based main theme -->
+    <style name="Theme.AppwriteStarterKit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="windowSplashScreenIconBackgroundColor">@android:color/black</item>
+
+        <!-- Optional: Customize Material Colors -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
     </style>
 
+    <!-- 💥 Splash Theme -->
     <style name="Theme.AppwriteStarterKit.SplashTheme" parent="Theme.SplashScreen.IconBackground">
-        <item name="windowSplashScreenBackground">#FFF</item>
+        <item name="windowSplashScreenBackground">@android:color/white</item>
         <item name="postSplashScreenTheme">@style/Theme.AppwriteStarterKit</item>
     </style>
+
 </resources>

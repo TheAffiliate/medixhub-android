@@ -72,5 +72,5 @@ dependencies {
 
     //More dependencies
     implementation("io.appwrite:sdk-for-android:8.2.1")
-
+    implementation("com.google.android.material:material:1.12.0")
 }
